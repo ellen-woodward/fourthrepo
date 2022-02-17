@@ -25,6 +25,9 @@ void loop() {
   int sensorValue = analogRead(A0);
   if (sensorValue > 500) {
       digitalWrite(ledPin, HIGH);
+      delay(1000);
+      digitalWrite(ledPin, LOW);
+      delay(1000);
   } else {
     digitalWrite(ledPin, LOW);
   }   
